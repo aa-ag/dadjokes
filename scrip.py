@@ -4,6 +4,10 @@ import requests
 
 ############------------ FUNCTIONS ------------############
 def get_random_dad_joke():
+    '''
+     hitting "random joke" endpoint
+     https://icanhazdadjoke.com/api#fetch-a-dad-joke
+    '''
     joke = requests.get('https://icanhazdadjoke.com',
                         headers={'Accept': 'application/json'}).json()
 
