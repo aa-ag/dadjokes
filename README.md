@@ -8,5 +8,6 @@ Project feeds off of [icanhazdadjoke](https://icanhazdadjoke.com/).
 
 ### env/prerequisites
 
-`conda install django`
-`conda activate dadjokesenv`
+* `conda install django`
+* `conda install djangorestframework`
+* `conda activate dadjokesenv`
