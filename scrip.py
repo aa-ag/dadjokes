@@ -1,9 +1,12 @@
 ############------------ IMPORTS ------------############
+import requests
 
-############------------ GLOBAL VARIABLES ------------############
 
 ############------------ FUNCTIONS ------------############
+def get_random_dad_joke():
+    pass
+
 
 ############------------ DRIVER CODE ------------############
 if __name__ == "__main__":
-    pass
+    get_random_dad_joke()
