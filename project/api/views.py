@@ -1,6 +1,16 @@
+############------------ IMPORTS ------------############
+import requests
 from django.shortcuts import render
 from django.http import HttpResponse
 
 
+############------------ VIEWS ------------############
 def main(request):
-    return HttpResponse("Hello World")
+    '''
+     hitting "random joke" endpoint
+     https://icanhazdadjoke.com/api#fetch-a-dad-joke
+    '''
+    joke = requests.get('https://icanhazdadjoke.com',
+                        headers={'Accept': 'application/json'}).json()
+
+    return HttpResponse(joke['joke'])
