@@ -10,4 +10,6 @@ Project feeds off of [icanhazdadjoke](https://icanhazdadjoke.com/).
 
 * `conda install django`
 * `conda install djangorestframework`
+* `conda install requests`
+* `conda install schedule`
 * `conda activate dadjokesenv`
