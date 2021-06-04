@@ -1,7 +1,6 @@
 ############------------ IMPORTS ------------############
+from django import shortcuts
 import requests
-import time
-import schedule
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -13,6 +12,8 @@ def main(request):
      https://icanhazdadjoke.com/api#fetch-a-dad-joke
     '''
     joke = requests.get('https://icanhazdadjoke.com',
-                        headers={'Accept': 'application/json'}).json()['joke']ß
+                        headers={'Accept': 'application/json'}).json()['joke']
 
-    return HttpResponse(joke)
+    context = {"joke": joke}
+
+    return render(request, "index.html", context)
