@@ -11,6 +11,6 @@ def main(request):
      https://icanhazdadjoke.com/api#fetch-a-dad-joke
     '''
     joke = requests.get('https://icanhazdadjoke.com',
-                        headers={'Accept': 'application/json'}).json()
+                        headers={'Accept': 'application/json'}).json()['joke']ß
 
-    return HttpResponse(joke['joke'])
+    return HttpResponse(joke)
