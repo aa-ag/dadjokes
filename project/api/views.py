@@ -16,4 +16,4 @@ def main(request):
 
     context = {"joke": joke}
 
-    return render(request, "index.html", context)
+    return render(request, "jokes.html", context)
