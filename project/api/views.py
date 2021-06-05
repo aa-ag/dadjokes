@@ -11,10 +11,10 @@ def main(request):
      hitting "random joke" endpoint
      https://icanhazdadjoke.com/api#fetch-a-dad-joke
     '''
-    # joke = requests.get('https://icanhazdadjoke.com',
-    #                     headers={'Accept': 'application/json'}).json()['joke']
+    joke = requests.get('https://icanhazdadjoke.com',
+                        headers={'Accept': 'application/json'}).json()['joke']
 
-    joke = "How do you fix a broken pizza? With tomato paste."
+    # joke = "How do you fix a broken pizza? With tomato paste."
 
     context = {"joke": joke}
 
